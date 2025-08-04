@@ -56,31 +56,30 @@ namespace prjICE_2_Indexers
         {
             get 
             {     
-                if (attrName == "carPrice")
+                if (attrName == "price")
                     return this.carPrice;
-                else if (attrName == "carPower")
+                else if (attrName == "power")
                     return this.carPower;
-                else if (attrName == "carSpeed")
+                else if (attrName == "speed")
                     return this.carSpeed;
-                else if (attrName == "carName")
+                else if (attrName == "name")
                     return this.carName;
-                else if (attrName == "carColour")
+                else if (attrName == "colour")
                     return this.carColour;
-                else
-                    return null;
+                return null;
             }
 
             set
             {
-                if (attrName.ToLower().Equals("carPrice"))
+                if (attrName.ToLower().Equals("price"))
                     this.carPrice = (int)value;
-                else if (attrName.ToLower().Equals("carPower"))
+                else if (attrName.ToLower().Equals("power"))
                     this.carPower = (int)value;
-                else if (attrName.ToLower().Equals("carSpeed"))
+                else if (attrName.ToLower().Equals("speed"))
                     this.carSpeed = (int)value;
-                else if (attrName.ToLower().Equals("carName"))
+                else if (attrName.ToLower().Equals("name"))
                     this.carName = (string)value;
-                else if (attrName.ToLower().Equals("carColour"))
+                else if (attrName.ToLower().Equals("colour"))
                     this.carColour = (string)value;
             }
         }
